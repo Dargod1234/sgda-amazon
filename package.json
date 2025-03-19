@@ -1,0 +1,37 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@popperjs/core": "^2.11.6",
+        "@vitejs/plugin-vue": "^4.5.0",
+        "axios": "^1.7.7",
+        "bootstrap": "^5.2.3",
+        "laravel-vite-plugin": "^1.0",
+        "sass": "^1.56.1",
+        "vite": "^5.0"
+    },
+    "dependencies": {
+        "@fullcalendar/core": "^6.1.15",
+        "@fullcalendar/daygrid": "^6.1.15",
+        "@fullcalendar/multimonth": "^6.1.15",
+        "@fullcalendar/interaction": "^6.1.15",
+        "@fullcalendar/timegrid": "^6.1.15",
+        "@simonwep/pickr": "^1.9.1",
+        "codemirror": "^5.65.18",
+        "codemirror-editor-vue3": "^2.8.0",
+        "cropperjs": "^1.6.2",
+        "eslint": "^9.13.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-vue": "^9.29.1",
+        "mitt": "^3.0.1",
+        "plyr": "^3.7.8",
+        "prettier": "^3.3.3",
+        "vuex": "^4.1.0"
+    }
+}

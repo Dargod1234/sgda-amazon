@@ -1,0 +1,543 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+
+
+/* Estilo general del calendario */
+.fc {
+    color: black; /* Letras negras */
+}
+
+/* Modificar los eventos en el calendario */
+.fc-event {
+    background-color: #007bff; /* Color de fondo */
+    color: white; /* Color del texto */
+}
+
+/* Estilos para los botones */
+.btn {
+    margin-top: 10px;
+}
+
+/* Estilo para los modales */
+.modal-content {
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Estilo para el formulario en los modales */
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px; /* Bordes redondeados para inputs */
+}
+.sidebar-dark-primary .nav-sidebar>.nav-item>.nav-link.active, .sidebar-light-primary .nav-sidebar>.nav-item>.nav-link.active{
+    background-color: #002155;
+}
+.btn-color{
+    border: none;
+    background-color: #002155;
+    color: white;
+}
+.btn-color:hover{
+    background-color: #f1c232;
+    color: white;
+}
+.sidebar-dark-primary, .navbar{
+    background-color: white;
+}
+.infoname a{
+    color: black !important;
+    text-decoration: none;
+}
+.infoname a:hover{
+    color: black !important;
+}
+.navbar{
+    height: 70px;
+}
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link{
+    color: black;
+}
+[class*=sidebar-dark-] .nav-treeview>.nav-item>.nav-link:hover{
+    color: rgb(41, 35, 35);
+}
+.card-tools a{
+    background-color: #002155;
+    border: none;
+}
+.card-tools a:hover{
+    background-color: #f1c232;
+    border: none;
+}
+.card-primary.card-outline {
+    border-top: 3px solid #002155;
+}
+.nav-papelera a{
+    color: white !important;
+    background-color: gray !important;
+}
+.nav-papelera a:hover{
+    background-color: gray !important;
+}
+.imagelogo img{
+    width: auto;
+    height: 80px;
+}
+.infoname{
+    padding-left: .8rem !important;
+}
+.infoname p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.collapse {
+    transition: height 0.3s ease;
+}
+
+.folder-list {
+    background-color: #f3f4f6;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.folder-item a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.folder-item a:hover {
+    color: #0056b3;
+}
+
+
+/* Estilo general para la tabla */
+table.system-table {
+    width: 100%;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+
+/* Estilos para el encabezado de la tabla */
+table.system-table thead {
+    display: block;
+}
+
+/* Aseguramos que el encabezado siempre esté fijo */
+table.system-table thead tr th {
+    height: 40px;
+    background-color: #f8f9fa;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* Estilos para el cuerpo de la tabla con el scroll infinito */
+table.system-table tbody {
+    max-height: 400px; /* Define la altura máxima del tbody */
+    overflow-y: auto; /* Activa el scroll vertical */
+    display: block; /* Cambia la visualización a bloque para hacer scroll */
+}
+
+/* Definimos un ancho fijo para las celdas y columnas */
+table.system-table tbody td,
+thead th {
+    width: 200px;
+
+}
+
+table.system-table td {
+    text-align: center;
+}
+
+#file-table {
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+#file-table th {
+    background-color: #00005C;
+    color: white;
+}
+
+#file-table td {
+    text-align: left;
+    padding: 10px;
+}
+.file-item{
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+}
+a.btn.btn-info.btn-sm, a.btn.btn-success.btn-sm, span.btn.btn-warning.btn-sm.editar-btn, span.btn.btn-danger.btn-sm.eliminar-btn{
+    padding: 10px;
+    gap: 6px;
+}
+.btn btn-info{
+    background-color: #00005C;
+    color: white;
+}
+.btn btn-info:hover{
+    background-color: #fbc609;
+    color: #00005C;
+}
+
+.btn-primary,
+.btn-secondary,
+.btn-danger {
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+input[type="text"] {
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+.nav-sidebar .nav-item>.nav-link{
+    background-color: #00005C;
+    color: white;
+}
+.nav-sidebar .nav-item > .nav-link:hover {
+    background-color: #FBC609; 
+    color: #00005C;
+    font-weight: 600; 
+}
+
+.nav-sidebar .nav-item > .nav-link.active {
+    background-color: #FBC609; 
+    color: #00005C; 
+    font-weight: 600;
+}
+.btn-color-unidad{
+    border: none;
+    background-color: #00005C;
+    color: white;
+}
+.btn-color-unidad:hover{
+    background-color: #FBC609;
+    color: #00005C; 
+    font-weight: 600;
+}
+.card-tools a{
+    background-color: #00005C;
+    border: none;
+    color: white
+}
+.card-tools a:hover{
+    background-color: #FBC609;
+    color: #00005C; 
+    font-weight: 600;
+}
+.custom-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.custom-table th, .custom-table td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+}
+
+.custom-table thead th {
+    background-color: #00005C;
+    color: white;
+    font-weight: bold;
+}
+
+.custom-table tbody tr:nth-child(even) {
+    background-color: #f0f0f0; /* Cambia este color para las filas pares */
+}
+
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #ffffff; /* Cambia este color para las filas impares */
+}
+
+.custom-table tbody tr td:last-child {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.custom-table .btn {
+    padding: 5px 8px;
+    font-size: 0.875rem;
+}
+
+.custom-table .btn-info {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
+.custom-table .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.custom-table .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.custom-table .btn-warning {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.custom-table .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.custom-table .btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.btn-close-white {
+    filter: invert(1);
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.modal .btn-primary, .modal .btn-warning, .modal .btn-danger, .modal .btn-secondary {
+    border-radius: 5px;
+    font-weight: 500;
+}
+.pagination .page-link{
+    color:#00005c;
+}
+.pagination .page-item.active .page-link{
+    background-color:#00005c;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+}
+.btn-activity{
+    background-color: #00005c !important;
+    border: none;
+}
+.btn-activity:hover{
+    background-color: #fbc609 !important;
+    color: #00005c;
+    font-weight: 600;
+    border: none;
+}
+table.table.table-striped.table-hover.table-bordered{
+    margin: 10px;
+    width: 98.5%;
+}
+#upload-btn {
+    font-size: 1.2rem;
+    /* Tamaño de fuente más grande */
+    border-radius: 8px;
+    /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    /* Transiciones suaves */
+    background-color: #007bff;
+    /* Color de fondo */
+    border: none;
+    /* Sin borde */
+}
+
+#upload-btn:hover {
+    background-color: #0056b3;
+    /* Color al pasar el mouse */
+    transform: scale(1.05);
+    /* Efecto de escala */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.5);
+    /* Sombra para profundidad */
+}
+
+#upload-btn i {
+    font-size: 1.3rem;
+    /* Tamaño del ícono */
+}
+#calendar {
+    background-color: #f4f6f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+@media (min-width: 992px) {
+    .sidebar-mini.sidebar-collapse .main-sidebar .imagelogo img{
+        height: 50px;
+        transition: width 0.3s ease;
+    }
+    .sidebar-mini.sidebar-collapse .main-sidebar .image.imagelogo{
+        padding-left: 0.5rem;
+        transition: width 0.3s ease;
+    }
+} body {
+    font-family: 'Roboto', sans-serif !important;
+    /* Cambia a Lato */
+    background-color: #f8f9fa !important;
+}
+a.btn.btn-secondary, button.btn.btn-danger, a.btn.btn-primary{
+    margin-right: 0;
+}
+
+/* Estilo del encabezado */
+.header {
+    background-color: #00005c !important;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: left;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+    /* Título más grande */
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Estilos de la lista de carpetas */
+.folder-list {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* Estilo de los elementos de carpeta */
+.folder-item {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    /* División para las carpetas */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.folder-item:last-child {
+    border-bottom: none;
+    /* Quitar borde del último elemento */
+}
+
+.folder-item:hover {
+    background-color: #e9ecef;
+    transform: scale(1.02);
+}
+
+/* Estilos del botón de nueva carpeta */
+#new-folder-btn {
+    background-color: #00005c;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+button#upload-btn{
+    background-color: #00005c;
+    border-radius: 10px;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+#upload-btn:hover{
+    background-color: #fbc609;
+    color: #00005c;
+}
+
+#new-folder-btn:hover {
+    background-color: #fbc609;
+    color: #00005c;
+}
+
+.table {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    /* Espacio entre la lista y la tabla */
+}
+
+/* Estilos de la tabla */
+.table {
+    width: 100%;
+    /* Asegura que la tabla ocupe todo el ancho disponible */
+    margin-top: 20px;
+    /* Espacio arriba de la tabla */
+    border-collapse: collapse;
+    /* Colapsar bordes para un mejor aspecto */
+}
+
+.table th {
+    padding: 15px 20px !important;
+    font-size: 1.1rem !important;
+    text-align: center !important;
+    border-bottom: 3px solid #003d80;
+    background-color: #00005C;
+    color: white !important;
+
+}
+
+/* Estilo para las celdas de la tabla */
+.table td {
+    padding: 15px 20px !important;
+    /* Aumentar padding en celdas */
+    font-size: 0.87777rem !important;
+    /* Tamaño de fuente para celdas */
+    border-bottom: 1px solid #dee2e6 !important;
+    /* Línea de separación entre filas */
+    text-align: center !important;
+    /* Centrar texto en las celdas de datos */
+}
+
+
+
+/* Estilo para filas de la tabla */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f2f2f2;
+    /* Color alternativo para filas impares */
+}
+
+.table-striped tbody tr:hover {
+    background-color: #e2e6ea;
+}
+
+/* Estilo para el campo de búsqueda */
+input[type="text"] {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+
